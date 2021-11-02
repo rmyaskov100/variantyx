@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 
-/* Hook React Option */
+/* Hook React Variation */
 const App = (props: AppProps) => {
 	const [greeting, setGreeting] = useState<string>('');
 
@@ -27,7 +27,7 @@ const App = (props: AppProps) => {
 
 interface AppProps {}
 
-/* Class React Option */
+/* Class React Variation */
 // class App extends React.Component<IAppProps, IAppState> {
 // 	constructor(props: IAppProps) {
 // 		super(props);
@@ -39,8 +39,8 @@ interface AppProps {}
 // 	async componentDidMount() {
 // 		try {
 // 			let r = await fetch('/api/hello');
-// 			let name = await r.json();
-// 			this.setState({ name });
+// 			let articles = await r.json();
+// 			this.setState({ articles });
 // 		} catch (error) {
 // 			console.log(error);
 // 		}
@@ -58,7 +58,7 @@ interface AppProps {}
 // export interface IAppProps {}
 
 // export interface IAppState {
-// 	blogs: Array<{type: string}>;
+// 	articles: Array<{type: string, id: number}>;
 // }
 
 export default App;
