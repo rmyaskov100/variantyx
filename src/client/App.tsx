@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 
-/* HOOK REACT EXAMPLE */
+/* Hook React Option */
 const App = (props: AppProps) => {
 	const [greeting, setGreeting] = useState<string>('');
 
@@ -20,14 +20,14 @@ const App = (props: AppProps) => {
 
 	return (
 		<main className="container my-5">
-			<h1 className="text-primary text-center">Hello {greeting}!</h1>
+			<h1 className="text-primary text-center">Variantyx {greeting}!</h1>
 		</main>
 	);
 };
 
 interface AppProps {}
 
-/* CLASS REACT EXAMPLE */
+/* Class React Option */
 // class App extends React.Component<IAppProps, IAppState> {
 // 	constructor(props: IAppProps) {
 // 		super(props);
@@ -49,7 +49,7 @@ interface AppProps {}
 // 	render() {
 // 		return (
 // 			<main className="container my-5">
-// 				<h1 className="text-primary text-center">Hello {this.state.name}!</h1>
+// 				<h1 className="text-primary text-center">Variantyx Project</h1>
 // 			</main>
 // 		);
 // 	}
@@ -58,7 +58,7 @@ interface AppProps {}
 // export interface IAppProps {}
 
 // export interface IAppState {
-// 	name: string;
+// 	blogs: Array<{type: string}>;
 // }
 
 export default App;
