@@ -16,7 +16,7 @@
   \******************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar express = __webpack_require__(/*! express */ \"express\");\r\nvar router = express.Router();\r\nrouter.get('/api/hello', function (req, res, next) {\r\n    res.json('World');\r\n});\r\nexports[\"default\"] = router;\r\n\n\n//# sourceURL=webpack://barebones-react-typescript-express/./src/server/routes.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar express = __webpack_require__(/*! express */ \"express\");\r\nvar router = express.Router();\r\nrouter.get('/api/hello', function (req, res, next) {\r\n    res.json('Variantyx');\r\n});\r\nexports[\"default\"] = router;\r\n\n\n//# sourceURL=webpack://barebones-react-typescript-express/./src/server/routes.ts?");
 
 /***/ }),
 
