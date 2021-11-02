@@ -1,7 +1,7 @@
 import * as mysql from 'mysql';
 import config from '../config';
 
-import Blogs from './blogs';
+import Articles from './externalArticles';
 
 export const Connection = mysql.createConnection(config.mysql);
 
@@ -10,5 +10,5 @@ Connection.connect(err => {
 });
 
 export default {
-    Blogs
+    Articles
 }

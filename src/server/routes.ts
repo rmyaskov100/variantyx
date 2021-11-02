@@ -10,8 +10,8 @@ router.get('/api/hello', (req, res, next) => {
 
 router.get('/api/blogs', async (req, res, next) => {
     try {
-        let blogs = await DB.Blogs.all();
-        res.json(blogs);
+        let articles = await DB.Articles.all();
+        res.json(articles);
     } catch(e) {
         //console.log(e);
         res.sendStatus(500);
