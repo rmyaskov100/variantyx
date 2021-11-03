@@ -8,7 +8,7 @@ router.get('/api/hello', (_req, res, _next) => {
     res.json('Project');
 });
 
-router.get('/api/articles', async (_req, res) => {
+router.get('/api/externalArticles', async (_req, res) => {
     try {
         let articles = await DB.Articles.all();
         res.json(articles);
