@@ -4,11 +4,11 @@ import DB from './db';
 
 const router = express.Router();
 
-router.get('/api/hello', (_req, res, _next) => {
+router.get('/api/hello', (req, res, _next) => {
     res.json('Project');
 });
 
-router.get('/api/externalArticles', async (_req, res) => {
+router.get('/api/articles', async (req, res) => {
     try {
         let articles = await DB.Articles.all();
         res.json(articles);
