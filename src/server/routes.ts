@@ -12,7 +12,7 @@ router.get('/api/articles', async (req, res) => {
     try {
         let articles = await DB.Articles.all();
         res.json(articles);
-    } catch(e) {
+    } catch (e) {
         //console.log(e);
         res.sendStatus(500);
     }

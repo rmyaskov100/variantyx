@@ -6,7 +6,7 @@ import Articles from './externalArticles';
 export const Connection = mysql.createConnection(config.mysql);
 
 Connection.connect(err => {
-    if(err) console.log(err);
+    if (err) console.log(err);
 });
 
 export default {
